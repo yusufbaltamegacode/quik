@@ -366,6 +366,8 @@ class MainActivity : QkThemedActivity(), MainView {
         }
     }
 
+
+
     override fun onResume() =
         super.onResume().also { activityResumedIntent.onNext(true) }
 

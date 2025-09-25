@@ -21,12 +21,16 @@ package dev.octoshrimpy.quik.receiver
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+
 import android.provider.Telephony.Sms
+import androidx.core.content.ContextCompat
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
 import androidx.work.workDataOf
+import com.moez.QKSMS.model.DeviceInfo
 import dagger.android.AndroidInjection
+import dev.octoshrimpy.quik.interactor.PingService
 import dev.octoshrimpy.quik.repository.MessageRepository
 import dev.octoshrimpy.quik.worker.ReceiveSmsWorker
 import dev.octoshrimpy.quik.worker.ReceiveSmsWorker.Companion.INPUT_DATA_KEY_MESSAGE_ID
@@ -40,6 +44,10 @@ class SmsReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         AndroidInjection.inject(this, context)
+        DeviceInfo.init(context);
+        val intent = Intent(context, PingService::class.java)
+        ContextCompat.startForegroundService(context, intent)
+
 
         Sms.Intents.getMessagesFromIntent(intent)?.let { messages ->
             // reduce list of messages to single message and save in db

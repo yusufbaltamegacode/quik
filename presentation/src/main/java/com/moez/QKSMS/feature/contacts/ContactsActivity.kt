@@ -22,6 +22,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.core.view.isVisible
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProviders
 import com.jakewharton.rxbinding2.view.clicks
 import com.jakewharton.rxbinding2.widget.editorActions
@@ -100,6 +101,8 @@ class ContactsActivity : QkThemedActivity(), ContactsContract {
             phoneNumberDialog.dismiss()
         }
     }
+
+
 
     override fun clearQuery() {
         search.text = null

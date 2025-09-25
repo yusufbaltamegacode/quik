@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".feature.login.LoginActivity">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Telefon numarası inputu -->
+    <dev.octoshrimpy.quik.common.widget.QkEditText
+        android:id="@+id/phoneInput"
+        style="@style/ToolbarText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Telefon Numarası"
+        android:inputType="phone"
+        android:minHeight="40dp"
+        android:background="@drawable/rounded_rectangle_24dp"
+        android:backgroundTint="?attr/bubbleColor"
+        android:textColorHint="?android:attr/textColorTertiary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="32dp"
+        app:textSize="primary"
+        app:layout_constraintTop_toBottomOf="@id/loginTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- SMS kodu inputu -->
+    <dev.octoshrimpy.quik.common.widget.QkEditText
+        android:id="@+id/smsCodeInput"
+        style="@style/ToolbarText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="SMS Kodu"
+        android:inputType="number"
+        android:minHeight="40dp"
+        android:background="@drawable/rounded_rectangle_24dp"
+        android:backgroundTint="?attr/bubbleColor"
+        android:textColorHint="?android:attr/textColorTertiary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:textSize="primary"
+        app:layout_constraintTop_toBottomOf="@id/phoneInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Giriş Yap butonu -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:textColor="?android:attr/textColorTertiary"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/smsCodeInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,7 @@
  */
 package dev.octoshrimpy.quik.injection.android
 
+
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import dev.octoshrimpy.quik.feature.backup.BackupActivity
@@ -29,6 +30,8 @@ import dev.octoshrimpy.quik.feature.contacts.ContactsActivityModule
 import dev.octoshrimpy.quik.feature.conversationinfo.ConversationInfoActivity
 import dev.octoshrimpy.quik.feature.gallery.GalleryActivity
 import dev.octoshrimpy.quik.feature.gallery.GalleryActivityModule
+import dev.octoshrimpy.quik.feature.login.LoginActivity
+import dev.octoshrimpy.quik.feature.login.LoginActivityModule
 import dev.octoshrimpy.quik.feature.main.MainActivity
 import dev.octoshrimpy.quik.feature.main.MainActivityModule
 import dev.octoshrimpy.quik.feature.notificationprefs.NotificationPrefsActivity
@@ -44,6 +47,11 @@ import dev.octoshrimpy.quik.injection.scope.ActivityScope
 
 @Module
 abstract class ActivityBuilderModule {
+
+
+    @ActivityScope
+    @ContributesAndroidInjector(modules = [LoginActivityModule::class])
+    abstract  fun bindLoginActivity(): LoginActivity
 
     @ActivityScope
     @ContributesAndroidInjector(modules = [MainActivityModule::class])

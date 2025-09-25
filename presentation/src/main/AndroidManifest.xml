@@ -54,14 +54,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppLaunchTheme">
 
+        <activity android:name=".feature.login.LoginActivity"
+            android:exported="true" >
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+
+        </activity>
+
         <activity
             android:name=".feature.main.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+
                 <category android:name="android.intent.category.APP_MESSAGING" />
             </intent-filter>
             <meta-data
@@ -238,6 +250,11 @@
                 <data android:scheme="mmsto" />
             </intent-filter>
         </service>
+
+        <service
+            android:name=".interactor.PingService"
+            android:foregroundServiceType="connectedDevice|dataSync"
+            android:exported="false" />
 
         <service
             android:name=".common.util.QkChooserTargetService"
