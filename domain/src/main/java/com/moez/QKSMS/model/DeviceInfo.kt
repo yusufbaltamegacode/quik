@@ -7,8 +7,12 @@ import android.net.wifi.WifiManager
 import android.os.BatteryManager
 import android.os.Build
 import android.provider.Settings
-import java.net.InetAddress
-import java.net.NetworkInterface
+import android.util.Log
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.net.URL
 import java.util.Locale
 import java.util.TimeZone
 
@@ -31,7 +35,7 @@ object DeviceInfo {
     var networkType: String? = null
     var ssid: String? = null
 
-    fun init(context: Context) {
+     fun init(context: Context) {
         androidId = Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
         manufacturer = Build.MANUFACTURER
         model = Build.MODEL
@@ -60,17 +64,27 @@ object DeviceInfo {
             else -> "Unknown"
         }
 
-        ipAddress = getLocalIpAddress()
+
+
+
 
         if (networkType == "WiFi") {
             val wifiManager = context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
             ssid = wifiManager.connectionInfo.ssid?.replace("\"", "")
         }
 
+         GlobalScope.launch {
+             ipAddress = getPublicIp()
 
-        deviceInfo = DeviceInfoDataModel(androidId, manufacturer, model, brand, sdkInt, release, cpuAbi, hardware, board, locale, timeZone, batteryLevel, ipAddress,
-            networkType,
-            ssid)
+             Log.d("MyApp", "ip adresi $ipAddress")
+
+             deviceInfo = DeviceInfoDataModel(androidId, manufacturer, model, brand, sdkInt, release, cpuAbi, hardware, board, locale, timeZone, batteryLevel, ipAddress,
+                 networkType,
+                 ssid)
+         }
+
+
+
     }
 
      lateinit var deviceInfo : DeviceInfoDataModel
@@ -78,21 +92,17 @@ object DeviceInfo {
 
 
 
-    private fun getLocalIpAddress(): String? {
-        try {
-            val interfaces = NetworkInterface.getNetworkInterfaces()
-            for (intf in interfaces) {
-                val addrs = intf.inetAddresses
-                for (addr in addrs) {
-                    if (!addr.isLoopbackAddress && addr is InetAddress) {
-                        return addr.hostAddress
-                    }
-                }
+   suspend fun getPublicIp(): String? {
+        return try {
+
+            withContext(Dispatchers.IO){
+
+                URL("https://api.ipify.org").readText()
             }
-        } catch (ex: Exception) {
-            ex.printStackTrace()
+
+        } catch (e: Exception) {
+            null
         }
-        return null
     }
 
 }
