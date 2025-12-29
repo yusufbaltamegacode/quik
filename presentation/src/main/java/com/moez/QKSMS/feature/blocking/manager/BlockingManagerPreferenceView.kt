@@ -17,7 +17,7 @@
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package dev.octoshrimpy.quik.feature.blocking.manager
+package dev.megacode.quik.feature.blocking.manager
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -26,9 +26,9 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeAttribute
-import dev.octoshrimpy.quik.common.util.extensions.setVisible
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.extensions.resolveThemeAttribute
+import dev.megacode.quik.common.util.extensions.setVisible
 import kotlinx.android.synthetic.main.blocking_manager_preference_view.view.*
 
 class BlockingManagerPreferenceView @JvmOverloads constructor(

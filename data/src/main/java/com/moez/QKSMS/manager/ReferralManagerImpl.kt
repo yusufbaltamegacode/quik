@@ -1,4 +1,4 @@
-package dev.octoshrimpy.quik.manager
+package dev.megacode.quik.manager
 
 import javax.inject.Inject
 

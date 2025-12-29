@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.main
+package dev.megacode.quik.feature.main
 
 import android.content.Context
 import android.text.SpannableString
@@ -24,15 +24,15 @@ import android.text.Spanned
 import android.text.style.BackgroundColorSpan
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.base.QkAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.DateFormatter
-import dev.octoshrimpy.quik.common.util.extensions.setVisible
-import dev.octoshrimpy.quik.extensions.removeAccents
-import dev.octoshrimpy.quik.model.SearchResult
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.base.QkAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.DateFormatter
+import dev.megacode.quik.common.util.extensions.setVisible
+import dev.megacode.quik.extensions.removeAccents
+import dev.megacode.quik.model.SearchResult
 import kotlinx.android.synthetic.main.search_list_item.*
 import kotlinx.android.synthetic.main.search_list_item.view.*
 import javax.inject.Inject

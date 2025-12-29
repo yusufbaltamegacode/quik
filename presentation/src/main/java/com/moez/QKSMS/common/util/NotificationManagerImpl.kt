@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common.util
+package dev.megacode.quik.common.util
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -36,31 +36,31 @@ import androidx.core.app.Person
 import androidx.core.app.RemoteInput
 import androidx.core.app.TaskStackBuilder
 import androidx.core.content.getSystemService
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.extensions.dpToPx
-import dev.octoshrimpy.quik.common.util.extensions.fromRecipient
-import dev.octoshrimpy.quik.common.util.extensions.toPerson
-import dev.octoshrimpy.quik.extensions.isImage
-import dev.octoshrimpy.quik.feature.compose.ComposeActivity
-import dev.octoshrimpy.quik.feature.qkreply.QkReplyActivity
-import dev.octoshrimpy.quik.manager.PermissionManager
-import dev.octoshrimpy.quik.manager.ShortcutManager
-import dev.octoshrimpy.quik.mapper.CursorToPartImpl
-import dev.octoshrimpy.quik.receiver.BlockThreadReceiver
-import dev.octoshrimpy.quik.receiver.DeleteMessagesReceiver
-import dev.octoshrimpy.quik.receiver.MarkArchivedReceiver
-import dev.octoshrimpy.quik.receiver.MarkReadReceiver
-import dev.octoshrimpy.quik.receiver.MarkSeenReceiver
-import dev.octoshrimpy.quik.receiver.RemoteMessagingReceiver
-import dev.octoshrimpy.quik.receiver.SpeakThreadsReceiver
-import dev.octoshrimpy.quik.receiver.SendSmsReceiver
-import dev.octoshrimpy.quik.repository.ContactRepository
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
-import dev.octoshrimpy.quik.util.GlideApp
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
-import dev.octoshrimpy.quik.util.Preferences
-import dev.octoshrimpy.quik.util.tryOrNull
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.extensions.dpToPx
+import dev.megacode.quik.common.util.extensions.fromRecipient
+import dev.megacode.quik.common.util.extensions.toPerson
+import dev.megacode.quik.extensions.isImage
+import dev.megacode.quik.feature.compose.ComposeActivity
+import dev.megacode.quik.feature.qkreply.QkReplyActivity
+import dev.megacode.quik.manager.PermissionManager
+import dev.megacode.quik.manager.ShortcutManager
+import dev.megacode.quik.mapper.CursorToPartImpl
+import dev.megacode.quik.receiver.BlockThreadReceiver
+import dev.megacode.quik.receiver.DeleteMessagesReceiver
+import dev.megacode.quik.receiver.MarkArchivedReceiver
+import dev.megacode.quik.receiver.MarkReadReceiver
+import dev.megacode.quik.receiver.MarkSeenReceiver
+import dev.megacode.quik.receiver.RemoteMessagingReceiver
+import dev.megacode.quik.receiver.SpeakThreadsReceiver
+import dev.megacode.quik.receiver.SendSmsReceiver
+import dev.megacode.quik.repository.ContactRepository
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageRepository
+import dev.megacode.quik.util.GlideApp
+import dev.megacode.quik.util.PhoneNumberUtils
+import dev.megacode.quik.util.Preferences
+import dev.megacode.quik.util.tryOrNull
 import timber.log.Timber
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -76,7 +76,7 @@ class NotificationManagerImpl @Inject constructor(
     private val phoneNumberUtils: PhoneNumberUtils,
     private val contactRepo: ContactRepository,
     private val shortcutManager: ShortcutManager
-) : dev.octoshrimpy.quik.manager.NotificationManager {
+) : dev.megacode.quik.manager.NotificationManager {
 
     companion object {
         const val DEFAULT_CHANNEL_ID = "notifications_default"

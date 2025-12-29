@@ -1,6 +1,6 @@
-package dev.octoshrimpy.quik.blocking
+package dev.megacode.quik.blocking
 
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.util.Preferences
 import io.reactivex.Completable
 import io.reactivex.Single
 import javax.inject.Inject

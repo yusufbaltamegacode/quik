@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common.widget
+package dev.megacode.quik.common.widget
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -27,13 +27,13 @@ import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import com.uber.autodispose.android.ViewScopeProvider
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.extensions.forEach
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeColor
-import dev.octoshrimpy.quik.extensions.Optional
-import dev.octoshrimpy.quik.injection.appComponent
-import dev.octoshrimpy.quik.repository.ConversationRepository
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.extensions.forEach
+import dev.megacode.quik.common.util.extensions.resolveThemeColor
+import dev.megacode.quik.extensions.Optional
+import dev.megacode.quik.injection.appComponent
+import dev.megacode.quik.repository.ConversationRepository
 import io.reactivex.subjects.BehaviorSubject
 import io.reactivex.subjects.Subject
 import kotlinx.android.synthetic.main.tab_view.view.*

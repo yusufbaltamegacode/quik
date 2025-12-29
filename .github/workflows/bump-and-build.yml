@@ -7,7 +7,7 @@ jobs:
   bump:
     runs-on: ubuntu-latest
     env:
-      META_YML: fdroid/metadata/dev.octoshrimpy.quik.yml
+      META_YML: fdroid/metadata/dev.megacode.quik.yml
       GRADLE_FILE: presentation/build.gradle
       CHANGELOG: data/src/main/assets/changelog.json
 

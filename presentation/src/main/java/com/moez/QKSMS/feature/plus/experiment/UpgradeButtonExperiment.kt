@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.plus.experiment
+package dev.megacode.quik.feature.plus.experiment
 
 import android.content.Context
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.experiment.Experiment
-import dev.octoshrimpy.quik.experiment.Variant
+import dev.megacode.quik.R
+import dev.megacode.quik.experiment.Experiment
+import dev.megacode.quik.experiment.Variant
 import javax.inject.Inject
 
 class UpgradeButtonExperiment @Inject constructor(

@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with QUIK.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.interactor
+package dev.megacode.quik.interactor
 
 import android.annotation.SuppressLint
 import android.content.Context
-import dev.octoshrimpy.quik.repository.ScheduledMessageRepository
+import dev.megacode.quik.repository.ScheduledMessageRepository
 import io.reactivex.Flowable
 import timber.log.Timber
 import java.io.File

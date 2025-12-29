@@ -1,4 +1,4 @@
-package dev.octoshrimpy.quik.common.util.extensions
+package dev.megacode.quik.common.util.extensions
 
 fun now(): Long {
     return System.currentTimeMillis()

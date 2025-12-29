@@ -16,15 +16,15 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.injection.android
+package dev.megacode.quik.injection.android
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import dev.octoshrimpy.quik.feature.backup.RestoreBackupService
-import dev.octoshrimpy.quik.injection.scope.ActivityScope
-import dev.octoshrimpy.quik.receiver.SendSmsReceiver
-import dev.octoshrimpy.quik.service.AutoDeleteService
-import dev.octoshrimpy.quik.service.HeadlessSmsSendService
+import dev.megacode.quik.feature.backup.RestoreBackupService
+import dev.megacode.quik.injection.scope.ActivityScope
+import dev.megacode.quik.receiver.SendSmsReceiver
+import dev.megacode.quik.service.AutoDeleteService
+import dev.megacode.quik.service.HeadlessSmsSendService
 
 @Module
 abstract class ServiceBuilderModule {

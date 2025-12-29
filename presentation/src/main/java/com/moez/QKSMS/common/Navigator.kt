@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common
+package dev.megacode.quik.common
 
 import android.app.Activity
 import android.app.role.RoleManager
@@ -28,23 +28,23 @@ import android.os.Build
 import android.provider.ContactsContract
 import android.provider.Settings
 import android.provider.Telephony
-import dev.octoshrimpy.quik.BuildConfig
-import dev.octoshrimpy.quik.compat.TelephonyCompat
-import dev.octoshrimpy.quik.extensions.resourceExists
-import dev.octoshrimpy.quik.feature.backup.BackupActivity
-import dev.octoshrimpy.quik.feature.blocking.BlockingActivity
-import dev.octoshrimpy.quik.feature.compose.ComposeActivity
-import dev.octoshrimpy.quik.feature.conversationinfo.ConversationInfoActivity
-import dev.octoshrimpy.quik.feature.gallery.GalleryActivity
-import dev.octoshrimpy.quik.feature.main.MainActivity
-import dev.octoshrimpy.quik.feature.notificationprefs.NotificationPrefsActivity
-import dev.octoshrimpy.quik.feature.plus.PlusActivity
-import dev.octoshrimpy.quik.feature.scheduled.ScheduledActivity
-import dev.octoshrimpy.quik.feature.settings.SettingsActivity
-import dev.octoshrimpy.quik.manager.BillingManager
-import dev.octoshrimpy.quik.manager.NotificationManager
-import dev.octoshrimpy.quik.manager.PermissionManager
-import dev.octoshrimpy.quik.model.ScheduledMessage
+import dev.megacode.quik.BuildConfig
+import dev.megacode.quik.compat.TelephonyCompat
+import dev.megacode.quik.extensions.resourceExists
+import dev.megacode.quik.feature.backup.BackupActivity
+import dev.megacode.quik.feature.blocking.BlockingActivity
+import dev.megacode.quik.feature.compose.ComposeActivity
+import dev.megacode.quik.feature.conversationinfo.ConversationInfoActivity
+import dev.megacode.quik.feature.gallery.GalleryActivity
+import dev.megacode.quik.feature.main.MainActivity
+import dev.megacode.quik.feature.notificationprefs.NotificationPrefsActivity
+import dev.megacode.quik.feature.plus.PlusActivity
+import dev.megacode.quik.feature.scheduled.ScheduledActivity
+import dev.megacode.quik.feature.settings.SettingsActivity
+import dev.megacode.quik.manager.BillingManager
+import dev.megacode.quik.manager.NotificationManager
+import dev.megacode.quik.manager.PermissionManager
+import dev.megacode.quik.model.ScheduledMessage
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.model
+package dev.megacode.quik.model
 
 import android.annotation.SuppressLint
 import android.content.ContentResolver
@@ -25,15 +25,15 @@ import android.net.Uri
 import android.os.Build
 import androidx.core.net.toFile
 import androidx.core.view.inputmethod.InputContentInfoCompat
-import dev.octoshrimpy.quik.extensions.contactToVCard
-import dev.octoshrimpy.quik.extensions.getName
-import dev.octoshrimpy.quik.extensions.getResourceBytes
-import dev.octoshrimpy.quik.extensions.getSize
-import dev.octoshrimpy.quik.extensions.getType
-import dev.octoshrimpy.quik.extensions.isAudio
-import dev.octoshrimpy.quik.extensions.isContact
-import dev.octoshrimpy.quik.extensions.isImage
-import dev.octoshrimpy.quik.extensions.isVCard
+import dev.megacode.quik.extensions.contactToVCard
+import dev.megacode.quik.extensions.getName
+import dev.megacode.quik.extensions.getResourceBytes
+import dev.megacode.quik.extensions.getSize
+import dev.megacode.quik.extensions.getType
+import dev.megacode.quik.extensions.isAudio
+import dev.megacode.quik.extensions.isContact
+import dev.megacode.quik.extensions.isImage
+import dev.megacode.quik.extensions.isVCard
 
 
 @SuppressLint("Range")

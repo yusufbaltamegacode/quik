@@ -16,15 +16,15 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.blocking.filters
+package dev.megacode.quik.feature.blocking.filters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkRealmAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.model.MessageContentFilter
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkRealmAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.model.MessageContentFilter
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
 import kotlinx.android.synthetic.main.message_content_filter_list_item.*

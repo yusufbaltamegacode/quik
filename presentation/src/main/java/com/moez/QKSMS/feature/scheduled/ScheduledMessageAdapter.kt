@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.scheduled
+package dev.megacode.quik.feature.scheduled
 
 import android.content.Context
 import android.net.Uri
@@ -24,15 +24,15 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkRealmAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.common.util.DateFormatter
-import dev.octoshrimpy.quik.model.Contact
-import dev.octoshrimpy.quik.model.Recipient
-import dev.octoshrimpy.quik.model.ScheduledMessage
-import dev.octoshrimpy.quik.repository.ContactRepository
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkRealmAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.common.util.DateFormatter
+import dev.megacode.quik.model.Contact
+import dev.megacode.quik.model.Recipient
+import dev.megacode.quik.model.ScheduledMessage
+import dev.megacode.quik.repository.ContactRepository
+import dev.megacode.quik.util.PhoneNumberUtils
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
 import kotlinx.android.synthetic.main.scheduled_message_list_item.*

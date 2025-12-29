@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.main
+package dev.megacode.quik.feature.main
 
 import android.Manifest
 import android.animation.ObjectAnimator
@@ -45,24 +45,24 @@ import com.moez.QKSMS.manager.SecurityHelper
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.androidxcompat.drawerOpen
-import dev.octoshrimpy.quik.common.base.QkThemedActivity
-import dev.octoshrimpy.quik.common.util.extensions.autoScrollToStart
-import dev.octoshrimpy.quik.common.util.extensions.dismissKeyboard
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeColor
-import dev.octoshrimpy.quik.common.util.extensions.scrapViews
-import dev.octoshrimpy.quik.common.util.extensions.setBackgroundTint
-import dev.octoshrimpy.quik.common.util.extensions.setTint
-import dev.octoshrimpy.quik.common.util.extensions.setVisible
-import dev.octoshrimpy.quik.common.widget.TextInputDialog
-import dev.octoshrimpy.quik.feature.blocking.BlockingDialog
-import dev.octoshrimpy.quik.feature.changelog.ChangelogDialog
-import dev.octoshrimpy.quik.feature.conversations.ConversationItemTouchCallback
-import dev.octoshrimpy.quik.feature.conversations.ConversationsAdapter
-import dev.octoshrimpy.quik.manager.ChangelogManager
-import dev.octoshrimpy.quik.repository.SyncRepository
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.androidxcompat.drawerOpen
+import dev.megacode.quik.common.base.QkThemedActivity
+import dev.megacode.quik.common.util.extensions.autoScrollToStart
+import dev.megacode.quik.common.util.extensions.dismissKeyboard
+import dev.megacode.quik.common.util.extensions.resolveThemeColor
+import dev.megacode.quik.common.util.extensions.scrapViews
+import dev.megacode.quik.common.util.extensions.setBackgroundTint
+import dev.megacode.quik.common.util.extensions.setTint
+import dev.megacode.quik.common.util.extensions.setVisible
+import dev.megacode.quik.common.widget.TextInputDialog
+import dev.megacode.quik.feature.blocking.BlockingDialog
+import dev.megacode.quik.feature.changelog.ChangelogDialog
+import dev.megacode.quik.feature.conversations.ConversationItemTouchCallback
+import dev.megacode.quik.feature.conversations.ConversationsAdapter
+import dev.megacode.quik.manager.ChangelogManager
+import dev.megacode.quik.repository.SyncRepository
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.PublishSubject

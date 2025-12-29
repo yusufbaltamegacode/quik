@@ -16,15 +16,15 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.blocking
+package dev.megacode.quik.blocking
 
 import android.content.Context
 import android.content.Intent
 import android.database.Cursor
 import android.net.Uri
 import androidx.core.database.getStringOrNull
-import dev.octoshrimpy.quik.common.util.extensions.isInstalled
-import dev.octoshrimpy.quik.extensions.map
+import dev.megacode.quik.common.util.extensions.isInstalled
+import dev.megacode.quik.extensions.map
 import io.reactivex.Completable
 import io.reactivex.Single
 import timber.log.Timber

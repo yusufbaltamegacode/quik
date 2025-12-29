@@ -16,32 +16,32 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.injection.android
+package dev.megacode.quik.injection.android
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import dev.octoshrimpy.quik.feature.widget.WidgetProvider
-import dev.octoshrimpy.quik.injection.scope.ActivityScope
-import dev.octoshrimpy.quik.receiver.BlockThreadReceiver
-import dev.octoshrimpy.quik.receiver.BootReceiver
-import dev.octoshrimpy.quik.receiver.DefaultSmsChangedReceiver
-import dev.octoshrimpy.quik.receiver.DeleteMessagesReceiver
-import dev.octoshrimpy.quik.receiver.MarkArchivedReceiver
-import dev.octoshrimpy.quik.receiver.MarkReadReceiver
-import dev.octoshrimpy.quik.receiver.MarkSeenReceiver
-import dev.octoshrimpy.quik.receiver.MmsReceivedReceiver
-import dev.octoshrimpy.quik.receiver.MmsReceiver
-import dev.octoshrimpy.quik.receiver.MmsSentReceiver
-import dev.octoshrimpy.quik.receiver.MmsUpdatedReceiver
-import dev.octoshrimpy.quik.receiver.NightModeReceiver
-import dev.octoshrimpy.quik.receiver.RemoteMessagingReceiver
-import dev.octoshrimpy.quik.receiver.SendScheduledMessageReceiver
-import dev.octoshrimpy.quik.receiver.SmsDeliveredReceiver
-import dev.octoshrimpy.quik.receiver.SmsProviderChangedReceiver
-import dev.octoshrimpy.quik.receiver.SmsReceiver
-import dev.octoshrimpy.quik.receiver.SmsSentReceiver
-import dev.octoshrimpy.quik.receiver.SpeakThreadsReceiver
-import dev.octoshrimpy.quik.receiver.StartActivityFromWidgetReceiver
+import dev.megacode.quik.feature.widget.WidgetProvider
+import dev.megacode.quik.injection.scope.ActivityScope
+import dev.megacode.quik.receiver.BlockThreadReceiver
+import dev.megacode.quik.receiver.BootReceiver
+import dev.megacode.quik.receiver.DefaultSmsChangedReceiver
+import dev.megacode.quik.receiver.DeleteMessagesReceiver
+import dev.megacode.quik.receiver.MarkArchivedReceiver
+import dev.megacode.quik.receiver.MarkReadReceiver
+import dev.megacode.quik.receiver.MarkSeenReceiver
+import dev.megacode.quik.receiver.MmsReceivedReceiver
+import dev.megacode.quik.receiver.MmsReceiver
+import dev.megacode.quik.receiver.MmsSentReceiver
+import dev.megacode.quik.receiver.MmsUpdatedReceiver
+import dev.megacode.quik.receiver.NightModeReceiver
+import dev.megacode.quik.receiver.RemoteMessagingReceiver
+import dev.megacode.quik.receiver.SendScheduledMessageReceiver
+import dev.megacode.quik.receiver.SmsDeliveredReceiver
+import dev.megacode.quik.receiver.SmsProviderChangedReceiver
+import dev.megacode.quik.receiver.SmsReceiver
+import dev.megacode.quik.receiver.SmsSentReceiver
+import dev.megacode.quik.receiver.SpeakThreadsReceiver
+import dev.megacode.quik.receiver.StartActivityFromWidgetReceiver
 
 @Module
 abstract class BroadcastReceiverBuilderModule {

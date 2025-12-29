@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.compose
+package dev.megacode.quik.feature.compose
 
 import android.net.Uri
 import android.view.MenuItem
@@ -24,10 +24,10 @@ import android.view.View
 import androidx.annotation.StringRes
 import androidx.core.view.inputmethod.InputContentInfoCompat
 import com.moez.QKSMS.common.QkMediaPlayer
-import dev.octoshrimpy.quik.common.base.QkView
-import dev.octoshrimpy.quik.common.widget.MicInputCloudView
-import dev.octoshrimpy.quik.model.Attachment
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.common.base.QkView
+import dev.megacode.quik.common.widget.MicInputCloudView
+import dev.megacode.quik.model.Attachment
+import dev.megacode.quik.model.Recipient
 import io.reactivex.Observable
 import io.reactivex.subjects.Subject
 

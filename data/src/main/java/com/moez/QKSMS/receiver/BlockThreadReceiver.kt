@@ -16,17 +16,17 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.receiver
+package dev.megacode.quik.receiver
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.blocking.BlockingClient
-import dev.octoshrimpy.quik.interactor.MarkBlocked
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.blocking.BlockingClient
+import dev.megacode.quik.interactor.MarkBlocked
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.util.Preferences
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 import javax.inject.Inject

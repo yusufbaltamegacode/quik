@@ -16,15 +16,15 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.service
+package dev.megacode.quik.service
 
 import android.app.IntentService
 import android.content.Intent
 import android.net.Uri
 import android.telephony.TelephonyManager
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.interactor.SendMessage
-import dev.octoshrimpy.quik.repository.ConversationRepository
+import dev.megacode.quik.interactor.SendMessage
+import dev.megacode.quik.repository.ConversationRepository
 import javax.inject.Inject
 
 class HeadlessSmsSendService : IntentService("HeadlessSmsSendService") {

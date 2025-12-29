@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.repository
+package dev.megacode.quik.repository
 
 import android.content.ContentResolver
 import android.content.ContentUris
@@ -25,27 +25,27 @@ import android.os.Handler
 import android.os.HandlerThread
 import android.provider.Telephony
 import com.f2prateek.rx.preferences2.RxSharedPreferences
-import dev.octoshrimpy.quik.extensions.forEach
-import dev.octoshrimpy.quik.extensions.insertOrUpdate
-import dev.octoshrimpy.quik.extensions.map
-import dev.octoshrimpy.quik.manager.KeyManager
-import dev.octoshrimpy.quik.mapper.CursorToContact
-import dev.octoshrimpy.quik.mapper.CursorToContactGroup
-import dev.octoshrimpy.quik.mapper.CursorToContactGroupMember
-import dev.octoshrimpy.quik.mapper.CursorToConversation
-import dev.octoshrimpy.quik.mapper.CursorToMessage
-import dev.octoshrimpy.quik.mapper.CursorToPart
-import dev.octoshrimpy.quik.mapper.CursorToRecipient
-import dev.octoshrimpy.quik.model.Contact
-import dev.octoshrimpy.quik.model.ContactGroup
-import dev.octoshrimpy.quik.model.Conversation
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.model.MmsPart
-import dev.octoshrimpy.quik.model.PhoneNumber
-import dev.octoshrimpy.quik.model.Recipient
-import dev.octoshrimpy.quik.model.SyncLog
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
-import dev.octoshrimpy.quik.util.tryOrNull
+import dev.megacode.quik.extensions.forEach
+import dev.megacode.quik.extensions.insertOrUpdate
+import dev.megacode.quik.extensions.map
+import dev.megacode.quik.manager.KeyManager
+import dev.megacode.quik.mapper.CursorToContact
+import dev.megacode.quik.mapper.CursorToContactGroup
+import dev.megacode.quik.mapper.CursorToContactGroupMember
+import dev.megacode.quik.mapper.CursorToConversation
+import dev.megacode.quik.mapper.CursorToMessage
+import dev.megacode.quik.mapper.CursorToPart
+import dev.megacode.quik.mapper.CursorToRecipient
+import dev.megacode.quik.model.Contact
+import dev.megacode.quik.model.ContactGroup
+import dev.megacode.quik.model.Conversation
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.model.MmsPart
+import dev.megacode.quik.model.PhoneNumber
+import dev.megacode.quik.model.Recipient
+import dev.megacode.quik.model.SyncLog
+import dev.megacode.quik.util.PhoneNumberUtils
+import dev.megacode.quik.util.tryOrNull
 import io.reactivex.subjects.BehaviorSubject
 import io.reactivex.subjects.Subject
 import io.realm.Realm

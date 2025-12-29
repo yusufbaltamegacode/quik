@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common
+package dev.megacode.quik.common
 
 import android.app.Activity
 import android.app.Application
@@ -35,17 +35,17 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import dagger.android.HasBroadcastReceiverInjector
 import dagger.android.HasServiceInjector
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.FileLoggingTree
-import dev.octoshrimpy.quik.injection.AppComponentManager
-import dev.octoshrimpy.quik.injection.appComponent
-import dev.octoshrimpy.quik.interactor.SpeakThreads
-import dev.octoshrimpy.quik.manager.BillingManager
-import dev.octoshrimpy.quik.manager.ReferralManager
-import dev.octoshrimpy.quik.migration.QkMigration
-import dev.octoshrimpy.quik.migration.QkRealmMigration
-import dev.octoshrimpy.quik.util.NightModeManager
-import dev.octoshrimpy.quik.worker.HousekeepingWorker
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.FileLoggingTree
+import dev.megacode.quik.injection.AppComponentManager
+import dev.megacode.quik.injection.appComponent
+import dev.megacode.quik.interactor.SpeakThreads
+import dev.megacode.quik.manager.BillingManager
+import dev.megacode.quik.manager.ReferralManager
+import dev.megacode.quik.migration.QkMigration
+import dev.megacode.quik.migration.QkRealmMigration
+import dev.megacode.quik.util.NightModeManager
+import dev.megacode.quik.worker.HousekeepingWorker
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import kotlinx.coroutines.Dispatchers

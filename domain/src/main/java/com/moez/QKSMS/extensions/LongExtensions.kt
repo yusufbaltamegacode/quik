@@ -1,4 +1,4 @@
-package dev.octoshrimpy.quik.extensions
+package dev.megacode.quik.extensions
 
 import java.util.concurrent.TimeUnit
 

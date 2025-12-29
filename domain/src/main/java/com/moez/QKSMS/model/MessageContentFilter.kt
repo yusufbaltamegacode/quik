@@ -1,4 +1,4 @@
-package dev.octoshrimpy.quik.model
+package dev.megacode.quik.model
 
 import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey

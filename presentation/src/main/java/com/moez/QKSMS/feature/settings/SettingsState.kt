@@ -16,10 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.settings
+package dev.megacode.quik.feature.settings
 
-import dev.octoshrimpy.quik.repository.SyncRepository
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.repository.SyncRepository
+import dev.megacode.quik.util.Preferences
 
 data class SettingsState(
     val theme: Int = 0,

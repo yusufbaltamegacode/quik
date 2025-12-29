@@ -16,10 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.settings
+package dev.megacode.quik.feature.settings
 
-import dev.octoshrimpy.quik.common.base.QkViewContract
-import dev.octoshrimpy.quik.common.widget.PreferenceView
+import dev.megacode.quik.common.base.QkViewContract
+import dev.megacode.quik.common.widget.PreferenceView
 import io.reactivex.Observable
 
 interface SettingsView : QkViewContract<SettingsState> {

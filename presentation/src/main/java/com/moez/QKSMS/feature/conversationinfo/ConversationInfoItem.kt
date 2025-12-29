@@ -1,7 +1,7 @@
-package dev.octoshrimpy.quik.feature.conversationinfo
+package dev.megacode.quik.feature.conversationinfo
 
-import dev.octoshrimpy.quik.model.MmsPart
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.model.MmsPart
+import dev.megacode.quik.model.Recipient
 import io.realm.RealmList
 
 sealed class ConversationInfoItem {

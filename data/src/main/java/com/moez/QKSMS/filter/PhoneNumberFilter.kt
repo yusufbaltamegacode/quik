@@ -16,9 +16,9 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.filter
+package dev.megacode.quik.filter
 
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
+import dev.megacode.quik.util.PhoneNumberUtils
 import javax.inject.Inject
 
 class PhoneNumberFilter @Inject constructor(

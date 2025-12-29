@@ -60,7 +60,7 @@ class MmsPartProvider : ContentProvider() {
             return Uri
                 .Builder()
                 .scheme(ContentResolver.SCHEME_CONTENT)
-                .authority("dev.octoshrimpy.quik.mmspart")
+                .authority("dev.megacode.quik.mmspart")
                 .encodedPath("part/$partId/$partName")
                 .build()
         }

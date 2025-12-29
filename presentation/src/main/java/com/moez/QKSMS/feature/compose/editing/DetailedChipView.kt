@@ -16,18 +16,18 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.compose.editing
+package dev.megacode.quik.feature.compose.editing
 
 import android.content.Context
 import android.view.View
 import android.view.animation.AlphaAnimation
 import android.widget.RelativeLayout
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.extensions.setBackgroundTint
-import dev.octoshrimpy.quik.common.util.extensions.setTint
-import dev.octoshrimpy.quik.injection.appComponent
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.extensions.setBackgroundTint
+import dev.megacode.quik.common.util.extensions.setTint
+import dev.megacode.quik.injection.appComponent
+import dev.megacode.quik.model.Recipient
 import kotlinx.android.synthetic.main.contact_chip_detailed.view.*
 import javax.inject.Inject
 

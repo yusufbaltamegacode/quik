@@ -1,4 +1,4 @@
-package dev.octoshrimpy.quik.feature.extensions
+package dev.megacode.quik.feature.extensions
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -7,12 +7,12 @@ import android.net.Uri
 import android.widget.ImageView
 import androidx.appcompat.content.res.AppCompatResources
 import com.bumptech.glide.Glide
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.extensions.getDefaultActivityIconForMimeType
-import dev.octoshrimpy.quik.extensions.isAudio
-import dev.octoshrimpy.quik.extensions.isImage
-import dev.octoshrimpy.quik.extensions.isVideo
-import dev.octoshrimpy.quik.extensions.resourceExists
+import dev.megacode.quik.R
+import dev.megacode.quik.extensions.getDefaultActivityIconForMimeType
+import dev.megacode.quik.extensions.isAudio
+import dev.megacode.quik.extensions.isImage
+import dev.megacode.quik.extensions.isVideo
+import dev.megacode.quik.extensions.resourceExists
 
 enum class LoadBestIconIntoImageView {
     Missing,

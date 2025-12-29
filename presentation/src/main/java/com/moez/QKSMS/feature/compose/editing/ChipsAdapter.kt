@@ -16,18 +16,18 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.compose.editing
+package dev.megacode.quik.feature.compose.editing
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.recyclerview.widget.RecyclerView
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.common.util.extensions.dpToPx
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.common.util.extensions.dpToPx
+import dev.megacode.quik.model.Recipient
 import io.reactivex.subjects.PublishSubject
 import kotlinx.android.synthetic.main.contact_chip.*
 import javax.inject.Inject

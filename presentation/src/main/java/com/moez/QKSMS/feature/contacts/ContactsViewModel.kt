@@ -16,27 +16,27 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.contacts
+package dev.megacode.quik.feature.contacts
 
 import android.view.inputmethod.EditorInfo
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.common.base.QkViewModel
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.extensions.removeAccents
-import dev.octoshrimpy.quik.feature.compose.editing.ComposeItem
-import dev.octoshrimpy.quik.feature.compose.editing.PhoneNumberAction
-import dev.octoshrimpy.quik.filter.ContactFilter
-import dev.octoshrimpy.quik.filter.ContactGroupFilter
-import dev.octoshrimpy.quik.interactor.SetDefaultPhoneNumber
-import dev.octoshrimpy.quik.model.Contact
-import dev.octoshrimpy.quik.model.ContactGroup
-import dev.octoshrimpy.quik.model.Conversation
-import dev.octoshrimpy.quik.model.PhoneNumber
-import dev.octoshrimpy.quik.model.Recipient
-import dev.octoshrimpy.quik.repository.ContactRepository
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
+import dev.megacode.quik.common.base.QkViewModel
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.extensions.removeAccents
+import dev.megacode.quik.feature.compose.editing.ComposeItem
+import dev.megacode.quik.feature.compose.editing.PhoneNumberAction
+import dev.megacode.quik.filter.ContactFilter
+import dev.megacode.quik.filter.ContactGroupFilter
+import dev.megacode.quik.interactor.SetDefaultPhoneNumber
+import dev.megacode.quik.model.Contact
+import dev.megacode.quik.model.ContactGroup
+import dev.megacode.quik.model.Conversation
+import dev.megacode.quik.model.PhoneNumber
+import dev.megacode.quik.model.Recipient
+import dev.megacode.quik.repository.ContactRepository
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.util.PhoneNumberUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.Observables

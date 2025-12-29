@@ -16,19 +16,19 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.interactor
+package dev.megacode.quik.interactor
 
 import android.net.Uri
-import dev.octoshrimpy.quik.blocking.BlockingClient
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.manager.ActiveConversationManager
-import dev.octoshrimpy.quik.manager.NotificationManager
-import dev.octoshrimpy.quik.repository.ContactRepository
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageContentFilterRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
-import dev.octoshrimpy.quik.repository.SyncRepository
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.blocking.BlockingClient
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.manager.ActiveConversationManager
+import dev.megacode.quik.manager.NotificationManager
+import dev.megacode.quik.repository.ContactRepository
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageContentFilterRepository
+import dev.megacode.quik.repository.MessageRepository
+import dev.megacode.quik.repository.SyncRepository
+import dev.megacode.quik.util.Preferences
 import io.reactivex.Flowable
 import timber.log.Timber
 import javax.inject.Inject

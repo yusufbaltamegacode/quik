@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.gallery
+package dev.megacode.quik.feature.gallery
 
 import android.Manifest
 import android.os.Bundle
@@ -30,11 +30,11 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkActivity
-import dev.octoshrimpy.quik.common.util.DateFormatter
-import dev.octoshrimpy.quik.common.util.extensions.setVisible
-import dev.octoshrimpy.quik.model.MmsPart
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkActivity
+import dev.megacode.quik.common.util.DateFormatter
+import dev.megacode.quik.common.util.extensions.setVisible
+import dev.megacode.quik.model.MmsPart
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject

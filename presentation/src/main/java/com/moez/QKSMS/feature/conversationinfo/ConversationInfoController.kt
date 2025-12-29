@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.conversationinfo
+package dev.megacode.quik.feature.conversationinfo
 
 import android.view.View
 import androidx.appcompat.app.AlertDialog
@@ -24,16 +24,16 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.bluelinelabs.conductor.RouterTransaction
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.QkChangeHandler
-import dev.octoshrimpy.quik.common.base.QkController
-import dev.octoshrimpy.quik.common.util.extensions.scrapViews
-import dev.octoshrimpy.quik.common.widget.TextInputDialog
-import dev.octoshrimpy.quik.feature.blocking.BlockingDialog
-import dev.octoshrimpy.quik.feature.conversationinfo.injection.ConversationInfoModule
-import dev.octoshrimpy.quik.feature.themepicker.ThemePickerController
-import dev.octoshrimpy.quik.injection.appComponent
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.QkChangeHandler
+import dev.megacode.quik.common.base.QkController
+import dev.megacode.quik.common.util.extensions.scrapViews
+import dev.megacode.quik.common.widget.TextInputDialog
+import dev.megacode.quik.feature.blocking.BlockingDialog
+import dev.megacode.quik.feature.conversationinfo.injection.ConversationInfoModule
+import dev.megacode.quik.feature.themepicker.ThemePickerController
+import dev.megacode.quik.injection.appComponent
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject

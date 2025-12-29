@@ -17,7 +17,7 @@
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package dev.octoshrimpy.quik.feature.widget
+package dev.megacode.quik.feature.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -29,14 +29,14 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.RemoteViews
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.extensions.getColorCompat
-import dev.octoshrimpy.quik.feature.compose.ComposeActivity
-import dev.octoshrimpy.quik.feature.main.MainActivity
-import dev.octoshrimpy.quik.manager.WidgetManager
-import dev.octoshrimpy.quik.receiver.StartActivityFromWidgetReceiver
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.extensions.getColorCompat
+import dev.megacode.quik.feature.compose.ComposeActivity
+import dev.megacode.quik.feature.main.MainActivity
+import dev.megacode.quik.manager.WidgetManager
+import dev.megacode.quik.receiver.StartActivityFromWidgetReceiver
+import dev.megacode.quik.util.Preferences
 import timber.log.Timber
 import javax.inject.Inject
 import androidx.core.net.toUri

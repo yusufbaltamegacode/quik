@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.compose
+package dev.megacode.quik.feature.compose
 
 import android.Manifest
 import android.animation.LayoutTransition
@@ -61,26 +61,26 @@ import com.uber.autodispose.ObservableSubscribeProxy
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.base.QkThemedActivity
-import dev.octoshrimpy.quik.common.util.DateFormatter
-import dev.octoshrimpy.quik.common.util.extensions.autoScrollToStart
-import dev.octoshrimpy.quik.common.util.extensions.dpToPx
-import dev.octoshrimpy.quik.common.util.extensions.hideKeyboard
-import dev.octoshrimpy.quik.common.util.extensions.makeToast
-import dev.octoshrimpy.quik.common.util.extensions.scrapViews
-import dev.octoshrimpy.quik.common.util.extensions.setBackgroundTint
-import dev.octoshrimpy.quik.common.util.extensions.setTint
-import dev.octoshrimpy.quik.common.util.extensions.setVisible
-import dev.octoshrimpy.quik.common.util.extensions.showKeyboard
-import dev.octoshrimpy.quik.common.widget.MicInputCloudView
-import dev.octoshrimpy.quik.common.widget.QkEditText
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.feature.compose.editing.ChipsAdapter
-import dev.octoshrimpy.quik.feature.contacts.ContactsActivity
-import dev.octoshrimpy.quik.model.Attachment
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.base.QkThemedActivity
+import dev.megacode.quik.common.util.DateFormatter
+import dev.megacode.quik.common.util.extensions.autoScrollToStart
+import dev.megacode.quik.common.util.extensions.dpToPx
+import dev.megacode.quik.common.util.extensions.hideKeyboard
+import dev.megacode.quik.common.util.extensions.makeToast
+import dev.megacode.quik.common.util.extensions.scrapViews
+import dev.megacode.quik.common.util.extensions.setBackgroundTint
+import dev.megacode.quik.common.util.extensions.setTint
+import dev.megacode.quik.common.util.extensions.setVisible
+import dev.megacode.quik.common.util.extensions.showKeyboard
+import dev.megacode.quik.common.widget.MicInputCloudView
+import dev.megacode.quik.common.widget.QkEditText
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.feature.compose.editing.ChipsAdapter
+import dev.megacode.quik.feature.contacts.ContactsActivity
+import dev.megacode.quik.model.Attachment
+import dev.megacode.quik.model.Recipient
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

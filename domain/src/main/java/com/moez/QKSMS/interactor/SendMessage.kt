@@ -16,13 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.interactor
+package dev.megacode.quik.interactor
 
 import android.content.Context
-import dev.octoshrimpy.quik.manager.ShortcutManager
-import dev.octoshrimpy.quik.model.Attachment
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
+import dev.megacode.quik.manager.ShortcutManager
+import dev.megacode.quik.model.Attachment
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageRepository
 import io.reactivex.Flowable
 import javax.inject.Inject
 

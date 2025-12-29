@@ -16,21 +16,21 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.gallery
+package dev.megacode.quik.feature.gallery
 
 import android.content.Context
 import com.moez.QKSMS.contentproviders.MmsPartProvider
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.base.QkViewModel
-import dev.octoshrimpy.quik.common.util.extensions.makeToast
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.interactor.SaveImage
-import dev.octoshrimpy.quik.manager.PermissionManager
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.base.QkViewModel
+import dev.megacode.quik.common.util.extensions.makeToast
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.interactor.SaveImage
+import dev.megacode.quik.manager.PermissionManager
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageRepository
 import io.reactivex.Flowable
 import io.reactivex.rxkotlin.plusAssign
 import javax.inject.Inject

@@ -1,7 +1,7 @@
-package dev.octoshrimpy.quik.common.util
+package dev.megacode.quik.common.util
 
 import android.app.Activity
-import dev.octoshrimpy.quik.manager.BillingManager
+import dev.megacode.quik.manager.BillingManager
 import io.reactivex.Observable
 import io.reactivex.subjects.BehaviorSubject
 import javax.inject.Inject

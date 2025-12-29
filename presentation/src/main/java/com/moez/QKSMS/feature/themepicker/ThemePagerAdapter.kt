@@ -16,13 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.themepicker
+package dev.megacode.quik.feature.themepicker
 
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
-import dev.octoshrimpy.quik.R
+import dev.megacode.quik.R
 import javax.inject.Inject
 
 class ThemePagerAdapter @Inject constructor(private val context: Context) : PagerAdapter() {

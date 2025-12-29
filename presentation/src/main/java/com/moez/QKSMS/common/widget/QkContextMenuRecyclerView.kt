@@ -1,13 +1,13 @@
-package dev.octoshrimpy.quik.common.widget
+package dev.megacode.quik.common.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.ContextMenu
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import dev.octoshrimpy.quik.common.base.QkAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.model.MmsPart
+import dev.megacode.quik.common.base.QkAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.model.MmsPart
 
 open class QkContextMenuRecyclerView<ADAPTER_VALUE_TYPE, VIEW_HOLDER_VALUE_TYPE> : RecyclerView {
     class ViewHolder<VIEW_HOLDER_VALUE_TYPE>(view: View) : QkViewHolder(view) {

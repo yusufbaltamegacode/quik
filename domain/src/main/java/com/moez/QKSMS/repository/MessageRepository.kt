@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.repository
+package dev.megacode.quik.repository
 
 import android.net.Uri
-import dev.octoshrimpy.quik.model.Attachment
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.model.MmsPart
+import dev.megacode.quik.model.Attachment
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.model.MmsPart
 import io.realm.RealmResults
 
 interface MessageRepository {

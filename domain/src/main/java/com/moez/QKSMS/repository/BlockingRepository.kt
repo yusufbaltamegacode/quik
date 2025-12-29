@@ -16,9 +16,9 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.repository
+package dev.megacode.quik.repository
 
-import dev.octoshrimpy.quik.model.BlockedNumber
+import dev.megacode.quik.model.BlockedNumber
 import io.realm.RealmResults
 
 interface BlockingRepository {

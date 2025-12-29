@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.repository
+package dev.megacode.quik.repository
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -41,25 +41,25 @@ import com.google.android.mms.pdu_alt.PduPersister
 import com.klinker.android.send_message.SmsManagerFactory
 import com.klinker.android.send_message.StripAccents
 import com.klinker.android.send_message.Transaction
-import dev.octoshrimpy.quik.common.util.extensions.now
-import dev.octoshrimpy.quik.compat.TelephonyCompat
-import dev.octoshrimpy.quik.extensions.anyOf
-import dev.octoshrimpy.quik.extensions.isImage
-import dev.octoshrimpy.quik.extensions.isVideo
-import dev.octoshrimpy.quik.extensions.resourceExists
-import dev.octoshrimpy.quik.manager.ActiveConversationManager
-import dev.octoshrimpy.quik.manager.KeyManager
-import dev.octoshrimpy.quik.model.Attachment
-import dev.octoshrimpy.quik.model.Conversation
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.model.MmsPart
-import dev.octoshrimpy.quik.receiver.SendSmsReceiver
-import dev.octoshrimpy.quik.receiver.SmsDeliveredReceiver
-import dev.octoshrimpy.quik.receiver.SmsSentReceiver
-import dev.octoshrimpy.quik.util.ImageUtils
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
-import dev.octoshrimpy.quik.util.Preferences
-import dev.octoshrimpy.quik.util.tryOrNull
+import dev.megacode.quik.common.util.extensions.now
+import dev.megacode.quik.compat.TelephonyCompat
+import dev.megacode.quik.extensions.anyOf
+import dev.megacode.quik.extensions.isImage
+import dev.megacode.quik.extensions.isVideo
+import dev.megacode.quik.extensions.resourceExists
+import dev.megacode.quik.manager.ActiveConversationManager
+import dev.megacode.quik.manager.KeyManager
+import dev.megacode.quik.model.Attachment
+import dev.megacode.quik.model.Conversation
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.model.MmsPart
+import dev.megacode.quik.receiver.SendSmsReceiver
+import dev.megacode.quik.receiver.SmsDeliveredReceiver
+import dev.megacode.quik.receiver.SmsSentReceiver
+import dev.megacode.quik.util.ImageUtils
+import dev.megacode.quik.util.PhoneNumberUtils
+import dev.megacode.quik.util.Preferences
+import dev.megacode.quik.util.tryOrNull
 import io.realm.Case
 import io.realm.Realm
 import io.realm.RealmResults

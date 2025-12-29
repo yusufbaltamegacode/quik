@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.notificationprefs
+package dev.megacode.quik.feature.notificationprefs
 
 import android.app.Activity
 import android.content.Intent
@@ -31,12 +31,12 @@ import com.jakewharton.rxbinding2.view.clicks
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.QkDialog
-import dev.octoshrimpy.quik.common.base.QkThemedActivity
-import dev.octoshrimpy.quik.common.util.extensions.animateLayoutChanges
-import dev.octoshrimpy.quik.common.util.extensions.setVisible
-import dev.octoshrimpy.quik.common.widget.PreferenceView
+import dev.megacode.quik.R
+import dev.megacode.quik.common.QkDialog
+import dev.megacode.quik.common.base.QkThemedActivity
+import dev.megacode.quik.common.util.extensions.animateLayoutChanges
+import dev.megacode.quik.common.util.extensions.setVisible
+import dev.megacode.quik.common.widget.PreferenceView
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject

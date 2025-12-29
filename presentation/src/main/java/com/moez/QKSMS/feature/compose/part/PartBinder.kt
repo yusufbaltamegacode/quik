@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.compose.part
+package dev.megacode.quik.feature.compose.part
 
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.model.MmsPart
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.model.MmsPart
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
 

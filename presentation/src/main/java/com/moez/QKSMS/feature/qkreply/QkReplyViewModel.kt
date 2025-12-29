@@ -16,24 +16,24 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.qkreply
+package dev.megacode.quik.feature.qkreply
 
 import android.telephony.SmsMessage
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.base.QkViewModel
-import dev.octoshrimpy.quik.compat.SubscriptionManagerCompat
-import dev.octoshrimpy.quik.extensions.asObservable
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.interactor.DeleteMessages
-import dev.octoshrimpy.quik.interactor.MarkRead
-import dev.octoshrimpy.quik.interactor.SendMessage
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
-import dev.octoshrimpy.quik.util.ActiveSubscriptionObservable
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.base.QkViewModel
+import dev.megacode.quik.compat.SubscriptionManagerCompat
+import dev.megacode.quik.extensions.asObservable
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.interactor.DeleteMessages
+import dev.megacode.quik.interactor.MarkRead
+import dev.megacode.quik.interactor.SendMessage
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageRepository
+import dev.megacode.quik.util.ActiveSubscriptionObservable
 import io.reactivex.rxkotlin.Observables
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.rxkotlin.withLatestFrom

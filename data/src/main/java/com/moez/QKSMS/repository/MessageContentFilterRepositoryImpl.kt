@@ -16,10 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.repository
+package dev.megacode.quik.repository
 
-import dev.octoshrimpy.quik.model.MessageContentFilter
-import dev.octoshrimpy.quik.model.MessageContentFilterData
+import dev.megacode.quik.model.MessageContentFilter
+import dev.megacode.quik.model.MessageContentFilterData
 import io.realm.Realm
 import io.realm.RealmResults
 import javax.inject.Inject

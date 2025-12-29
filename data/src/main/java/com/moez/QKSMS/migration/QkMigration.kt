@@ -16,13 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.migration
+package dev.megacode.quik.migration
 
 import android.content.Context
-import dev.octoshrimpy.quik.blocking.QksmsBlockingClient
-import dev.octoshrimpy.quik.common.util.extensions.versionCode
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.blocking.QksmsBlockingClient
+import dev.megacode.quik.common.util.extensions.versionCode
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.util.Preferences
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject

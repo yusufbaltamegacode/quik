@@ -16,22 +16,22 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common.util
+package dev.megacode.quik.common.util
 
 import android.graphics.Typeface
 import android.os.Build
 import android.util.AttributeSet
 import android.widget.EditText
 import android.widget.TextView
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.TextViewStyler.Companion.SIZE_PRIMARY
-import dev.octoshrimpy.quik.common.util.TextViewStyler.Companion.SIZE_SECONDARY
-import dev.octoshrimpy.quik.common.util.TextViewStyler.Companion.SIZE_TERTIARY
-import dev.octoshrimpy.quik.common.util.TextViewStyler.Companion.SIZE_TOOLBAR
-import dev.octoshrimpy.quik.common.util.extensions.getColorCompat
-import dev.octoshrimpy.quik.common.widget.QkEditText
-import dev.octoshrimpy.quik.common.widget.QkTextView
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.TextViewStyler.Companion.SIZE_PRIMARY
+import dev.megacode.quik.common.util.TextViewStyler.Companion.SIZE_SECONDARY
+import dev.megacode.quik.common.util.TextViewStyler.Companion.SIZE_TERTIARY
+import dev.megacode.quik.common.util.TextViewStyler.Companion.SIZE_TOOLBAR
+import dev.megacode.quik.common.util.extensions.getColorCompat
+import dev.megacode.quik.common.widget.QkEditText
+import dev.megacode.quik.common.widget.QkTextView
+import dev.megacode.quik.util.Preferences
 import javax.inject.Inject
 
 

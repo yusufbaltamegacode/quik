@@ -205,7 +205,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="dev.octoshrimpy.quik.intent.action.ACTION_NOTIFY_DATASET_CHANGED" />
+                <action android:name="dev.megacode.quik.intent.action.ACTION_NOTIFY_DATASET_CHANGED" />
             </intent-filter>
 
             <meta-data

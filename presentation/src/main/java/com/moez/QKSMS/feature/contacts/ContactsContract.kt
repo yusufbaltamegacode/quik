@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.contacts
+package dev.megacode.quik.feature.contacts
 
-import dev.octoshrimpy.quik.common.base.QkView
-import dev.octoshrimpy.quik.extensions.Optional
-import dev.octoshrimpy.quik.feature.compose.editing.ComposeItem
-import dev.octoshrimpy.quik.feature.compose.editing.PhoneNumberAction
+import dev.megacode.quik.common.base.QkView
+import dev.megacode.quik.extensions.Optional
+import dev.megacode.quik.feature.compose.editing.ComposeItem
+import dev.megacode.quik.feature.compose.editing.PhoneNumberAction
 import io.reactivex.Observable
 import io.reactivex.subjects.Subject
 

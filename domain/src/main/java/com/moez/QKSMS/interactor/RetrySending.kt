@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.interactor
+package dev.megacode.quik.interactor
 
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.manager.NotificationManager
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.repository.MessageRepository
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.manager.NotificationManager
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.repository.MessageRepository
 import io.reactivex.Flowable
 import javax.inject.Inject
 

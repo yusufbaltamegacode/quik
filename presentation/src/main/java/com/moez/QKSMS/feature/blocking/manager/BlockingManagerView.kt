@@ -1,6 +1,6 @@
-package dev.octoshrimpy.quik.feature.blocking.manager
+package dev.megacode.quik.feature.blocking.manager
 
-import dev.octoshrimpy.quik.common.base.QkViewContract
+import dev.megacode.quik.common.base.QkViewContract
 import io.reactivex.Observable
 import io.reactivex.Single
 

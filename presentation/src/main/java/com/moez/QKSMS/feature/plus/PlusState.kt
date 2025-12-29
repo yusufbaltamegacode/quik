@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.plus
+package dev.megacode.quik.feature.plus
 
 data class PlusState(
     val upgraded: Boolean = true,

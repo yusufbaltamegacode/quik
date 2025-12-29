@@ -16,21 +16,21 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.blocking
+package dev.megacode.quik.feature.blocking
 
 import android.view.View
 import com.bluelinelabs.conductor.RouterTransaction
 import com.jakewharton.rxbinding2.view.clicks
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.QkChangeHandler
-import dev.octoshrimpy.quik.common.base.QkController
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.extensions.animateLayoutChanges
-import dev.octoshrimpy.quik.feature.blocking.manager.BlockingManagerController
-import dev.octoshrimpy.quik.feature.blocking.messages.BlockedMessagesController
-import dev.octoshrimpy.quik.feature.blocking.numbers.BlockedNumbersController
-import dev.octoshrimpy.quik.feature.blocking.filters.MessageContentFiltersController
-import dev.octoshrimpy.quik.injection.appComponent
+import dev.megacode.quik.R
+import dev.megacode.quik.common.QkChangeHandler
+import dev.megacode.quik.common.base.QkController
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.extensions.animateLayoutChanges
+import dev.megacode.quik.feature.blocking.manager.BlockingManagerController
+import dev.megacode.quik.feature.blocking.messages.BlockedMessagesController
+import dev.megacode.quik.feature.blocking.numbers.BlockedNumbersController
+import dev.megacode.quik.feature.blocking.filters.MessageContentFiltersController
+import dev.megacode.quik.injection.appComponent
 import kotlinx.android.synthetic.main.blocking_controller.*
 import kotlinx.android.synthetic.main.settings_switch_widget.view.*
 import javax.inject.Inject

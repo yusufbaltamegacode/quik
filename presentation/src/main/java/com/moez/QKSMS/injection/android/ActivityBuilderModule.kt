@@ -16,31 +16,31 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.injection.android
+package dev.megacode.quik.injection.android
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import dev.octoshrimpy.quik.feature.backup.BackupActivity
-import dev.octoshrimpy.quik.feature.blocking.BlockingActivity
-import dev.octoshrimpy.quik.feature.compose.ComposeActivity
-import dev.octoshrimpy.quik.feature.compose.ComposeActivityModule
-import dev.octoshrimpy.quik.feature.contacts.ContactsActivity
-import dev.octoshrimpy.quik.feature.contacts.ContactsActivityModule
-import dev.octoshrimpy.quik.feature.conversationinfo.ConversationInfoActivity
-import dev.octoshrimpy.quik.feature.gallery.GalleryActivity
-import dev.octoshrimpy.quik.feature.gallery.GalleryActivityModule
-import dev.octoshrimpy.quik.feature.main.MainActivity
-import dev.octoshrimpy.quik.feature.main.MainActivityModule
-import dev.octoshrimpy.quik.feature.notificationprefs.NotificationPrefsActivity
-import dev.octoshrimpy.quik.feature.notificationprefs.NotificationPrefsActivityModule
-import dev.octoshrimpy.quik.feature.plus.PlusActivity
-import dev.octoshrimpy.quik.feature.plus.PlusActivityModule
-import dev.octoshrimpy.quik.feature.qkreply.QkReplyActivity
-import dev.octoshrimpy.quik.feature.qkreply.QkReplyActivityModule
-import dev.octoshrimpy.quik.feature.scheduled.ScheduledActivity
-import dev.octoshrimpy.quik.feature.scheduled.ScheduledActivityModule
-import dev.octoshrimpy.quik.feature.settings.SettingsActivity
-import dev.octoshrimpy.quik.injection.scope.ActivityScope
+import dev.megacode.quik.feature.backup.BackupActivity
+import dev.megacode.quik.feature.blocking.BlockingActivity
+import dev.megacode.quik.feature.compose.ComposeActivity
+import dev.megacode.quik.feature.compose.ComposeActivityModule
+import dev.megacode.quik.feature.contacts.ContactsActivity
+import dev.megacode.quik.feature.contacts.ContactsActivityModule
+import dev.megacode.quik.feature.conversationinfo.ConversationInfoActivity
+import dev.megacode.quik.feature.gallery.GalleryActivity
+import dev.megacode.quik.feature.gallery.GalleryActivityModule
+import dev.megacode.quik.feature.main.MainActivity
+import dev.megacode.quik.feature.main.MainActivityModule
+import dev.megacode.quik.feature.notificationprefs.NotificationPrefsActivity
+import dev.megacode.quik.feature.notificationprefs.NotificationPrefsActivityModule
+import dev.megacode.quik.feature.plus.PlusActivity
+import dev.megacode.quik.feature.plus.PlusActivityModule
+import dev.megacode.quik.feature.qkreply.QkReplyActivity
+import dev.megacode.quik.feature.qkreply.QkReplyActivityModule
+import dev.megacode.quik.feature.scheduled.ScheduledActivity
+import dev.megacode.quik.feature.scheduled.ScheduledActivityModule
+import dev.megacode.quik.feature.settings.SettingsActivity
+import dev.megacode.quik.injection.scope.ActivityScope
 
 @Module
 abstract class ActivityBuilderModule {

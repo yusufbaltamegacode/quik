@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common.base
+package dev.megacode.quik.common.base
 
 import android.annotation.SuppressLint
 import android.app.ActivityManager
@@ -28,16 +28,16 @@ import androidx.core.view.iterator
 import androidx.lifecycle.Lifecycle
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeBoolean
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeColor
-import dev.octoshrimpy.quik.extensions.Optional
-import dev.octoshrimpy.quik.extensions.asObservable
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.extensions.resolveThemeBoolean
+import dev.megacode.quik.common.util.extensions.resolveThemeColor
+import dev.megacode.quik.extensions.Optional
+import dev.megacode.quik.extensions.asObservable
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageRepository
+import dev.megacode.quik.util.PhoneNumberUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.Observables

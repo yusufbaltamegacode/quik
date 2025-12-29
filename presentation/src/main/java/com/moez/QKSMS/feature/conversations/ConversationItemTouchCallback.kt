@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.conversations
+package dev.megacode.quik.feature.conversations
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -26,10 +26,10 @@ import android.graphics.Rect
 import androidx.core.graphics.drawable.toBitmap
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.util.extensions.dpToPx
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.util.extensions.dpToPx
+import dev.megacode.quik.util.Preferences
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.Observables
 import io.reactivex.rxkotlin.plusAssign

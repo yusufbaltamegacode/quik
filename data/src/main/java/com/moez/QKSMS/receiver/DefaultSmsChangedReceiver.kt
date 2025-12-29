@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.receiver
+package dev.megacode.quik.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -25,8 +25,8 @@ import android.os.Build
 import android.provider.Telephony
 import androidx.annotation.RequiresApi
 import dagger.android.AndroidInjection
-import dev.octoshrimpy.quik.interactor.SyncMessages
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.interactor.SyncMessages
+import dev.megacode.quik.util.Preferences
 import javax.inject.Inject
 
 class DefaultSmsChangedReceiver : BroadcastReceiver() {

@@ -16,9 +16,9 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.gallery
+package dev.megacode.quik.feature.gallery
 
-import dev.octoshrimpy.quik.model.MmsPart
+import dev.megacode.quik.model.MmsPart
 import io.realm.RealmResults
 
 data class GalleryState(

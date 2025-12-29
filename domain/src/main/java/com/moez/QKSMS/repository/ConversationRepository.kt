@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.repository
+package dev.megacode.quik.repository
 
-import dev.octoshrimpy.quik.model.Conversation
-import dev.octoshrimpy.quik.model.Recipient
-import dev.octoshrimpy.quik.model.SearchResult
+import dev.megacode.quik.model.Conversation
+import dev.megacode.quik.model.Recipient
+import dev.megacode.quik.model.SearchResult
 import io.reactivex.Completable
 import io.reactivex.Observable
 import io.realm.RealmResults

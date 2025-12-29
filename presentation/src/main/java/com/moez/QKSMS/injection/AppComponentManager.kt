@@ -16,9 +16,9 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.injection
+package dev.megacode.quik.injection
 
-import dev.octoshrimpy.quik.common.QKApplication
+import dev.megacode.quik.common.QKApplication
 
 internal lateinit var appComponent: AppComponent
     private set

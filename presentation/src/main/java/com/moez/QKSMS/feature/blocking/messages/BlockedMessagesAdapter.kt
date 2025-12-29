@@ -16,20 +16,20 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.blocking.messages
+package dev.megacode.quik.feature.blocking.messages
 
 import android.content.Context
 import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkRealmAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.common.util.DateFormatter
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeColor
-import dev.octoshrimpy.quik.model.Conversation
-import dev.octoshrimpy.quik.util.Preferences
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkRealmAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.common.util.DateFormatter
+import dev.megacode.quik.common.util.extensions.resolveThemeColor
+import dev.megacode.quik.model.Conversation
+import dev.megacode.quik.util.Preferences
 import io.reactivex.subjects.PublishSubject
 import kotlinx.android.synthetic.main.blocked_list_item.*
 import kotlinx.android.synthetic.main.blocked_list_item.view.*

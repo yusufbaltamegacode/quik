@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.common.widget
+package dev.megacode.quik.common.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -24,11 +24,11 @@ import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.extensions.getColorCompat
-import dev.octoshrimpy.quik.common.util.extensions.resolveThemeColor
-import dev.octoshrimpy.quik.common.util.extensions.setBackgroundTint
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.extensions.getColorCompat
+import dev.megacode.quik.common.util.extensions.resolveThemeColor
+import dev.megacode.quik.common.util.extensions.setBackgroundTint
+import dev.megacode.quik.model.Recipient
 import kotlinx.android.synthetic.main.group_avatar_view.view.*
 
 class GroupAvatarView @JvmOverloads constructor(

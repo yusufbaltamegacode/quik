@@ -1,4 +1,4 @@
-package dev.octoshrimpy.quik.common.util.extensions
+package dev.megacode.quik.common.util.extensions
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -17,12 +17,12 @@ import androidx.core.app.Person
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.widget.TextViewCompat
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.common.widget.QkTextView
-import dev.octoshrimpy.quik.model.Recipient
-import dev.octoshrimpy.quik.util.GlideApp
-import dev.octoshrimpy.quik.util.tryOrNull
+import dev.megacode.quik.R
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.common.widget.QkTextView
+import dev.megacode.quik.model.Recipient
+import dev.megacode.quik.util.GlideApp
+import dev.megacode.quik.util.tryOrNull
 import timber.log.Timber
 
 

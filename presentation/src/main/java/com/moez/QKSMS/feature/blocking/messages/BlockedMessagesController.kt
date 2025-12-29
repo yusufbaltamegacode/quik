@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.blocking.messages
+package dev.megacode.quik.feature.blocking.messages
 
 import android.content.Context
 import android.view.Menu
@@ -24,11 +24,11 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkController
-import dev.octoshrimpy.quik.common.util.Colors
-import dev.octoshrimpy.quik.feature.blocking.BlockingDialog
-import dev.octoshrimpy.quik.injection.appComponent
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkController
+import dev.megacode.quik.common.util.Colors
+import dev.megacode.quik.feature.blocking.BlockingDialog
+import dev.megacode.quik.injection.appComponent
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
 import kotlinx.android.synthetic.main.blocked_messages_controller.*

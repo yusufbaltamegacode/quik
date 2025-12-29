@@ -16,15 +16,15 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.conversationinfo
+package dev.megacode.quik.feature.conversationinfo
 
 import android.content.Context
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import dev.octoshrimpy.quik.common.util.extensions.dpToPx
-import dev.octoshrimpy.quik.feature.conversationinfo.ConversationInfoItem.ConversationInfoMedia
-import dev.octoshrimpy.quik.feature.conversationinfo.ConversationInfoItem.ConversationInfoRecipient
+import dev.megacode.quik.common.util.extensions.dpToPx
+import dev.megacode.quik.feature.conversationinfo.ConversationInfoItem.ConversationInfoMedia
+import dev.megacode.quik.feature.conversationinfo.ConversationInfoItem.ConversationInfoRecipient
 
 class GridSpacingItemDecoration(
     private val adapter: ConversationInfoAdapter,

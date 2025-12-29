@@ -16,19 +16,19 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.scheduled
+package dev.megacode.quik.feature.scheduled
 
 import android.content.Context
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.base.QkAdapter
-import dev.octoshrimpy.quik.common.base.QkViewHolder
-import dev.octoshrimpy.quik.extensions.getName
-import dev.octoshrimpy.quik.feature.extensions.LoadBestIconIntoImageView
-import dev.octoshrimpy.quik.feature.extensions.loadBestIconIntoImageView
+import dev.megacode.quik.R
+import dev.megacode.quik.common.base.QkAdapter
+import dev.megacode.quik.common.base.QkViewHolder
+import dev.megacode.quik.extensions.getName
+import dev.megacode.quik.feature.extensions.LoadBestIconIntoImageView
+import dev.megacode.quik.feature.extensions.loadBestIconIntoImageView
 import kotlinx.android.synthetic.main.scheduled_message_image_list_item.fileName
 import kotlinx.android.synthetic.main.scheduled_message_image_list_item.thumbnail
 import javax.inject.Inject

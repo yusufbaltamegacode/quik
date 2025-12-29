@@ -16,10 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.mapper
+package dev.megacode.quik.mapper
 
 import android.database.Cursor
-import dev.octoshrimpy.quik.model.Recipient
+import dev.megacode.quik.model.Recipient
 
 interface CursorToRecipient : Mapper<Cursor, Recipient> {
 

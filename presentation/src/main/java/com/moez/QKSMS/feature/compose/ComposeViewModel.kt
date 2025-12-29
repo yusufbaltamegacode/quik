@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with QKSMS.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dev.octoshrimpy.quik.feature.compose
+package dev.megacode.quik.feature.compose
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -39,45 +39,45 @@ import com.moez.QKSMS.manager.MediaRecorderManager.AUDIO_FILE_SUFFIX
 import com.moez.QKSMS.util.Constants.Companion.SAVED_MESSAGE_TEXT_FILE_PREFIX
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
-import dev.octoshrimpy.quik.R
-import dev.octoshrimpy.quik.common.Navigator
-import dev.octoshrimpy.quik.common.base.QkViewModel
-import dev.octoshrimpy.quik.common.util.ClipboardUtils
-import dev.octoshrimpy.quik.common.util.MessageDetailsFormatter
-import dev.octoshrimpy.quik.common.util.extensions.makeToast
-import dev.octoshrimpy.quik.common.widget.MicInputCloudView
-import dev.octoshrimpy.quik.common.widget.QkContextMenuRecyclerView
-import dev.octoshrimpy.quik.compat.SubscriptionManagerCompat
-import dev.octoshrimpy.quik.extensions.asObservable
-import dev.octoshrimpy.quik.extensions.isImage
-import dev.octoshrimpy.quik.extensions.isSmil
-import dev.octoshrimpy.quik.extensions.isVideo
-import dev.octoshrimpy.quik.extensions.mapNotNull
-import dev.octoshrimpy.quik.interactor.AddScheduledMessage
-import dev.octoshrimpy.quik.interactor.CancelDelayedMessage
-import dev.octoshrimpy.quik.interactor.DeleteMessages
-import dev.octoshrimpy.quik.interactor.MarkRead
-import dev.octoshrimpy.quik.interactor.RetrySending
-import dev.octoshrimpy.quik.interactor.SaveImage
-import dev.octoshrimpy.quik.interactor.SendMessage
-import dev.octoshrimpy.quik.manager.ActiveConversationManager
-import dev.octoshrimpy.quik.manager.BillingManager
-import dev.octoshrimpy.quik.manager.PermissionManager
-import dev.octoshrimpy.quik.model.Attachment
-import dev.octoshrimpy.quik.model.Conversation
-import dev.octoshrimpy.quik.model.Message
-import dev.octoshrimpy.quik.model.MmsPart
-import dev.octoshrimpy.quik.model.Recipient
-import dev.octoshrimpy.quik.model.getText
-import dev.octoshrimpy.quik.repository.ContactRepository
-import dev.octoshrimpy.quik.repository.ConversationRepository
-import dev.octoshrimpy.quik.repository.MessageRepository
-import dev.octoshrimpy.quik.repository.ScheduledMessageRepository
-import dev.octoshrimpy.quik.util.ActiveSubscriptionObservable
-import dev.octoshrimpy.quik.util.FileUtils
-import dev.octoshrimpy.quik.util.PhoneNumberUtils
-import dev.octoshrimpy.quik.util.Preferences
-import dev.octoshrimpy.quik.util.tryOrNull
+import dev.megacode.quik.R
+import dev.megacode.quik.common.Navigator
+import dev.megacode.quik.common.base.QkViewModel
+import dev.megacode.quik.common.util.ClipboardUtils
+import dev.megacode.quik.common.util.MessageDetailsFormatter
+import dev.megacode.quik.common.util.extensions.makeToast
+import dev.megacode.quik.common.widget.MicInputCloudView
+import dev.megacode.quik.common.widget.QkContextMenuRecyclerView
+import dev.megacode.quik.compat.SubscriptionManagerCompat
+import dev.megacode.quik.extensions.asObservable
+import dev.megacode.quik.extensions.isImage
+import dev.megacode.quik.extensions.isSmil
+import dev.megacode.quik.extensions.isVideo
+import dev.megacode.quik.extensions.mapNotNull
+import dev.megacode.quik.interactor.AddScheduledMessage
+import dev.megacode.quik.interactor.CancelDelayedMessage
+import dev.megacode.quik.interactor.DeleteMessages
+import dev.megacode.quik.interactor.MarkRead
+import dev.megacode.quik.interactor.RetrySending
+import dev.megacode.quik.interactor.SaveImage
+import dev.megacode.quik.interactor.SendMessage
+import dev.megacode.quik.manager.ActiveConversationManager
+import dev.megacode.quik.manager.BillingManager
+import dev.megacode.quik.manager.PermissionManager
+import dev.megacode.quik.model.Attachment
+import dev.megacode.quik.model.Conversation
+import dev.megacode.quik.model.Message
+import dev.megacode.quik.model.MmsPart
+import dev.megacode.quik.model.Recipient
+import dev.megacode.quik.model.getText
+import dev.megacode.quik.repository.ContactRepository
+import dev.megacode.quik.repository.ConversationRepository
+import dev.megacode.quik.repository.MessageRepository
+import dev.megacode.quik.repository.ScheduledMessageRepository
+import dev.megacode.quik.util.ActiveSubscriptionObservable
+import dev.megacode.quik.util.FileUtils
+import dev.megacode.quik.util.PhoneNumberUtils
+import dev.megacode.quik.util.Preferences
+import dev.megacode.quik.util.tryOrNull
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.Observables
@@ -438,7 +438,7 @@ class ComposeViewModel @Inject constructor(
                     navigator.viewFile(
                         FileProvider.getUriForFile(
                             context,
-                            "dev.octoshrimpy.quik.messagesText",
+                            "dev.megacode.quik.messagesText",
                             uri.toFile()
                         ),
                         mimeType
