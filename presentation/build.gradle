@@ -38,17 +38,16 @@ android {
     signingConfigs {
         debug // Uses the default debug keystore.
         release {
-            def keystoreProps = new Properties()
-            def keystorePropsFile = rootProject.file('./.gradle/.gradlerc')
-            storeFile file('./my-release-key.keystore')
-            keyAlias 'quik_release'
-            if (keystorePropsFile.exists()) {
-                keystoreProps.load(new FileInputStream(keystorePropsFile))
-            } else {
-                // do nothing
+            def props = new Properties()
+            def propFile = project.rootProject.file('local.properties')
+            if (propFile.exists()) {
+                props.load(propFile.newDataInputStream())
+
+                storeFile file(props.getProperty('RELEASE_STORE_FILE'))
+                storePassword props.getProperty('RELEASE_STORE_PASSWORD')
+                keyAlias props.getProperty('RELEASE_KEY_ALIAS')
+                keyPassword props.getProperty('RELEASE_KEY_PASSWORD')
             }
-            storePassword keystoreProps['storePassword']
-            keyPassword keystoreProps['keyPassword']
         }
     }
 
@@ -209,10 +208,5 @@ dependencies {
 }
 // Check to make sure that the keystore file is present when building a release
 gradle.taskGraph.whenReady { taskGraph ->
-    if ((taskGraph.hasTask(':assembleRelease') ||
-            taskGraph.allTasks.any { it.name == 'assembleRelease' }) &&
-            !file('./.gradle/.gradlerc').exists() &&
-            System.getenv("CI") != "true") {
-        throw new GradleException("Keystore properties file not found")
-    }
+
 }

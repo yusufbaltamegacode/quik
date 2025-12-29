@@ -41,6 +41,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import com.google.android.material.snackbar.Snackbar
 import com.jakewharton.rxbinding2.view.clicks
 import com.jakewharton.rxbinding2.widget.textChanges
+import com.moez.QKSMS.manager.SecurityHelper
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
 import dagger.android.AndroidInjection
@@ -140,6 +141,12 @@ class MainActivity : QkThemedActivity(), MainView {
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
+
+
+        if (!SecurityHelper(this).isDeviceSafe()) {
+            // Kullanıcıya cihazın güvenli olmadığını belirten bir mesaj göster ve uygulamayı kapat
+            finish()
+        }
         setContentView(R.layout.main_activity)
         viewModel.bindView(this)
         onNewIntentIntent.onNext(intent)

@@ -43,6 +43,8 @@ dependencies {
 
     // dagger
     implementation "com.google.dagger:dagger:$dagger_version"
+
+    implementation("androidx.work:work-runtime-ktx:$androidx_work_version")
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     //Resolve jdk8+ Generation Annotations - javax annotation does not exist
     implementation 'com.github.pengrad:jdk9-deps:1ffe84c468'
@@ -74,6 +76,8 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
     implementation project(":common")
+    // root için güvenlik için
+    implementation 'com.scottyab:rootbeer-lib:0.1.0'
 
 }
 

